@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "481843444244",
+    "project_id": "timepad-17a62",
+    "storage_bucket": "timepad-17a62.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:481843444244:android:28e9dffd082313c45c4501",
+        "android_client_info": {
+          "package_name": "com.lucascalderon1.timepad"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "481843444244-jipvsu8coavar9vvgruk7civ6irtgp6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo2jpE0LQUw55ywNmhLRsNhtvvnAJSDbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "481843444244-jipvsu8coavar9vvgruk7civ6irtgp6e.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
