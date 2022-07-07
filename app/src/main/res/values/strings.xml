@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TimePad</string>
+
+    <!-- HOME -->
+
+    <string name="tarefas">Terefas</string>
+    <string name="time">00:00:00</string>
+    <string name="boasVindas">Seja Bem Vindo!</string>
+    <string name="nome">Nome Sobrenome</string>
+    <string name="historico">Historico</string>
+    <string name="mostrartodos">Mostrar Todos</string>
+
+    <!-- CARDVIEW -->
+
+    <string name="nomeTarefa">Nome Tarefa</string>
+    <string name="tarefa">Tarefa</string>
+
+</resources>
