@@ -24,6 +24,15 @@
         <entry key="..\:/Projetos-Android/TimePad/app/src/main/res/layout/configurar_pix.xml" value="0.3359375" />
         <entry key="..\:/Projetos-Android/TimePad/app/src/main/res/layout/toolbar_configurar.xml" value="0.3359375" />
         <entry key="..\:/Projetos-Android/TimePad/app/src/main/res/layout/toolbar_pix.xml" value="0.3359375" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/activity_atividades.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/activity_configuracao.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/activity_nova_tarefa.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/activity_recupera.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/card_recycler.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/toolbar_atividades.xml" value="0.365625" />
+        <entry key="..\:/Users/Lucas/AndroidStudioProjects/TimePad/app/src/main/res/layout/toolbar_tarefa.xml" value="0.365625" />
       </map>
     </option>
   </component>
@@ -32,5 +41,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.36666666666666664" />
+      </ProjectState>
+    </option>
   </component>
 </project>
