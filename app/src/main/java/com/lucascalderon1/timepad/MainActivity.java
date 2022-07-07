@@ -3,14 +3,17 @@ package com.lucascalderon1.timepad;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
-import com.lucascalderon1.timepad.Login.LoginActivity;
 import com.lucascalderon1.timepad.configuracao.ConfiguracaoActivity;
 
 public class MainActivity extends AppCompatActivity {
+
+    MediaPlayer player;
 
     private ImageView btnAtividades;
 
@@ -35,5 +38,51 @@ public class MainActivity extends AppCompatActivity {
             finish();
             startActivity(new Intent(this, NovaTarefa.class));
         });
+
+
+
+    }
+
+    public  void play(View view) {
+        if (player == null) {
+            player = MediaPlayer.create(this, R.raw.piano);
+            Toast.makeText(this, "Som iniciado", Toast.LENGTH_SHORT).show();
+            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+
+                @Override
+                public void onCompletion(MediaPlayer mp) {
+
+                    stopPlayer();
+                }
+            });
+        }
+
+        player.start();
+    }
+
+    public void pause (View view) {
+        if (player != null) {
+            Toast.makeText(this, "Som pausado", Toast.LENGTH_SHORT).show();
+            player.pause();
+        }
+    }
+
+
+    public void stop (View view) {
+        stopPlayer();
+
+    }
+
+    private void stopPlayer() {
+        if (player != null) {
+            player.release();
+            Toast.makeText(this, "Som parado", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        stopPlayer();
     }
 }

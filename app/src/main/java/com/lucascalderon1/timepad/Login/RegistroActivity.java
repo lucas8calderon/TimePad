@@ -119,7 +119,7 @@ public class RegistroActivity extends AppCompatActivity {
         usuarioRef.setValue(usuario).addOnCompleteListener(task -> {
             if (task.isSuccessful()) {
                 finish();
-                startActivity(new Intent(this, MainActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
             } else {
 
                 Toast.makeText(this, task.getException().getMessage(), Toast.LENGTH_SHORT).show();
