@@ -39,6 +39,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, NovaTarefa.class));
         });
 
+        findViewById(R.id.cronometro).setOnClickListener(v -> {
+            finish();
+            startActivity(new Intent(this, TimerActivity.class));
+        });
+
         //FullScreen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);

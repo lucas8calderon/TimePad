@@ -126,13 +126,10 @@
         app:layout_constraintVertical_bias="0.797">
 
 
-
-
-
     </ScrollView>
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/cronometro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -148,11 +145,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_add"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+        app:layout_constraintBottom_toBottomOf="@+id/cronometro"
         app:layout_constraintEnd_toStartOf="@+id/imageView5"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toTopOf="@+id/imageView4" />
+        app:layout_constraintStart_toEndOf="@+id/cronometro"
+        app:layout_constraintTop_toTopOf="@+id/cronometro" />
 
     <ImageView
         android:id="@+id/imageView5"
@@ -193,19 +190,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:onClick="pause"
         android:layout_marginEnd="14dp"
+        android:onClick="pause"
         app:layout_constraintEnd_toStartOf="@+id/iv_stop"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/ic_pause" />
 
     <ImageView
         android:id="@+id/iv_stop"
-        android:onClick="stop"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="14dp"
+        android:onClick="stop"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/ic_stop" />
