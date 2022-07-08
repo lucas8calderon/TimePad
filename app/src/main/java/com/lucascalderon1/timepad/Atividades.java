@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 
 public class Atividades extends AppCompatActivity {
 
@@ -16,5 +17,9 @@ public class Atividades extends AppCompatActivity {
             finish();
             startActivity(new Intent(this, MainActivity.class));
         });
+
+        //FullScreen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
     }
 }

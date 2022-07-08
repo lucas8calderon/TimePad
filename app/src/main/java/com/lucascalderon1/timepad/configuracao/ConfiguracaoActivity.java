@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.WindowManager;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
@@ -44,6 +45,9 @@ public class ConfiguracaoActivity extends AppCompatActivity {
             Toast.makeText(this, "Confifurações salvas com sucesso!", Toast.LENGTH_SHORT).show();
         });
 
+        //FullScreen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
 
