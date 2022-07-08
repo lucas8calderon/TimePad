@@ -23,7 +23,6 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-
         findViewById(R.id.config).setOnClickListener(v -> {
             finish();
             startActivity(new Intent(this, ConfiguracaoActivity.class));
@@ -40,12 +39,11 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-
     }
 
-    public  void play(View view) {
+    public void play(View view) {
         if (player == null) {
-            player = MediaPlayer.create(this, R.raw.piano);
+            player = MediaPlayer.create(this, R.raw.badmantingsriddim);
             Toast.makeText(this, "Som iniciado", Toast.LENGTH_SHORT).show();
             player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
@@ -60,7 +58,7 @@ public class MainActivity extends AppCompatActivity {
         player.start();
     }
 
-    public void pause (View view) {
+    public void pause(View view) {
         if (player != null) {
             Toast.makeText(this, "Som pausado", Toast.LENGTH_SHORT).show();
             player.pause();
@@ -68,21 +66,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void stop (View view) {
+    public void stop(View view) {
         stopPlayer();
 
     }
 
     private void stopPlayer() {
         if (player != null) {
-            player.release();
+            player.pause();
             Toast.makeText(this, "Som parado", Toast.LENGTH_SHORT).show();
         }
     }
 
+
     @Override
     protected void onStop() {
         super.onStop();
-        stopPlayer();
+        player.pause();
     }
 }
