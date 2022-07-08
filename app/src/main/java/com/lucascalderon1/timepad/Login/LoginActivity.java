@@ -18,8 +18,12 @@ import com.lucascalderon1.timepad.helper.FirebaseHelper;
 
 public class LoginActivity extends AppCompatActivity {
 
+
+
     private TextInputEditText  etEmail, loginSenha;
     private ProgressBar progressBar;
+
+
 
 
 
@@ -27,6 +31,12 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+
+        //FullScreen
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
+                WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
+
 
         etEmail = findViewById(R.id.etEmail);
         loginSenha = findViewById(R.id.loginSenha);

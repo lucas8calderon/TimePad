@@ -15,6 +15,8 @@
         android:layout_marginTop="150dp"
         android:layout_marginEnd="24dp"
         android:hint="Digite seu E-mail"
+        app:counterEnabled="true"
+        app:counterMaxLength="30"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -25,6 +27,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bordas_arredondadas"
             android:drawablePadding="24dp"
+            android:maxLength="31"
             android:drawableStart="@drawable/ic_baseline_email_24"
             android:inputType="textPersonName" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -39,18 +42,22 @@
         android:layout_marginTop="250dp"
         android:layout_marginEnd="24dp"
         android:hint="Digite sua Senha"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/etSenha1"
+            android:maxLength="7"
+            android:drawableEnd="@drawable/ic_mostrar_senha"
+            android:inputType="numberPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/bordas_arredondadas"
             android:drawablePadding="24dp"
-            android:drawableStart="@drawable/ic_baseline_email_24"
-            android:inputType="textPersonName" />
+            android:drawableStart="@drawable/ic_senha" />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -64,6 +71,8 @@
         android:layout_marginTop="350dp"
         android:layout_marginEnd="24dp"
         android:hint="Confirme sua Senha"
+        app:counterEnabled="true"
+        app:counterMaxLength="6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -74,8 +83,10 @@
             android:layout_height="wrap_content"
             android:background="@drawable/bordas_arredondadas"
             android:drawablePadding="24dp"
+            android:maxLength="7"
             android:drawableStart="@drawable/ic_senha"
-            android:inputType="textPersonName" />
+            android:drawableEnd="@drawable/ic_mostrar_senha"
+            android:inputType="numberPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
