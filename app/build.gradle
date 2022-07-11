@@ -45,8 +45,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-auth'
     implementation 'com.google.firebase:firebase-database'
 
-    //Custom depenndencies
-
+    //Custom dependencies
     implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+
+
+    
 
 }

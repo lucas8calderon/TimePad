@@ -6,10 +6,10 @@
     android:shape="ring"
     android:thickness="10dp"
     android:innerRadiusRatio="2.3"
-    android:useLevel="true">
+    android:useLevel="false">
 
     <solid
-        android:color="@color/roxo2">
+        android:color="@color/roxo">
     </solid>
 
 

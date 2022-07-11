@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.os.CountDownTimer;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -14,7 +15,9 @@ import com.lucascalderon1.timepad.configuracao.ConfiguracaoActivity;
 
 public class MainActivity extends AppCompatActivity {
 
-    MediaPlayer player;
+    int counter;
+
+    MediaPlayer mediaPlayer;
 
     private ImageView btnAtividades;
 
@@ -22,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        mediaPlayer = null;
 
 
         findViewById(R.id.config).setOnClickListener(v -> {
@@ -51,47 +56,45 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void play(View view) {
-        if (player == null) {
-            player = MediaPlayer.create(this, R.raw.badmantingsriddim);
-            Toast.makeText(this, "Som iniciado", Toast.LENGTH_SHORT).show();
-            player.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
 
-                @Override
-                public void onCompletion(MediaPlayer mp) {
-
-                    stopPlayer();
+    public void music (View view) {
+        switch (view.getId()){
+            case R.id.iv_play:
+                if(mediaPlayer == null) {
+                    mediaPlayer = MediaPlayer.create(this, R.raw.badmantingsriddim);
                 }
-            });
+
+                mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+                    @Override
+                    public void onCompletion(MediaPlayer mp) {
+                        stopMusic();
+                    }
+                });
+
+                mediaPlayer.start();
+                break;
+
+            case R.id.iv_pause:
+                if (mediaPlayer != null)
+                    mediaPlayer.pause();
+                break;
+
+            case R.id.iv_stop:
+                if (mediaPlayer != null) {
+                    mediaPlayer.stop();
+                    stopMusic();
+                }
+                break;
+
+
         }
-
-        player.start();
     }
 
-    public void pause(View view) {
-        if (player != null) {
-            Toast.makeText(this, "Som pausado", Toast.LENGTH_SHORT).show();
-            player.pause();
-        }
+    private void stopMusic() {
+        mediaPlayer.release();
+        mediaPlayer = null;
     }
 
 
-    public void stop(View view) {
-        stopPlayer();
 
-    }
-
-    private void stopPlayer() {
-        if (player != null) {
-            player.pause();
-            Toast.makeText(this, "Som parado", Toast.LENGTH_SHORT).show();
-        }
-    }
-
-
-    @Override
-    protected void onStop() {
-        super.onStop();
-        player.pause();
-    }
 }

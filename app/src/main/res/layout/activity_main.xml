@@ -174,12 +174,12 @@
 
     <ImageView
         android:id="@+id/iv_play"
+        android:onClick="music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="14dp"
         android:layout_marginBottom="42dp"
-        android:onClick="play"
         app:layout_constraintBottom_toBottomOf="@+id/imageView2"
         app:layout_constraintEnd_toStartOf="@+id/iv_pause"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
@@ -187,11 +187,12 @@
 
     <ImageView
         android:id="@+id/iv_pause"
+        android:onClick="music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="14dp"
-        android:onClick="pause"
+
         app:layout_constraintEnd_toStartOf="@+id/iv_stop"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/ic_pause" />
@@ -202,7 +203,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="14dp"
-        android:onClick="stop"
+        android:onClick="music"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
         app:srcCompat="@drawable/ic_stop" />
