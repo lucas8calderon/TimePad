@@ -62,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
             case R.id.iv_play:
                 if(mediaPlayer == null) {
                     mediaPlayer = MediaPlayer.create(this, R.raw.badmantingsriddim);
+                    Toast.makeText(getApplicationContext(), "Musica iniciada!", Toast.LENGTH_SHORT).show();
                 }
 
                 mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -76,12 +77,14 @@ public class MainActivity extends AppCompatActivity {
 
             case R.id.iv_pause:
                 if (mediaPlayer != null)
+                    Toast.makeText(getApplicationContext(), "Musica pausada!", Toast.LENGTH_SHORT).show();
                     mediaPlayer.pause();
                 break;
 
             case R.id.iv_stop:
                 if (mediaPlayer != null) {
                     mediaPlayer.stop();
+                    Toast.makeText(getApplicationContext(), "Musica parada!", Toast.LENGTH_SHORT).show();
                     stopMusic();
                 }
                 break;
