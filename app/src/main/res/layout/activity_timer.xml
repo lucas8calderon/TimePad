@@ -5,64 +5,112 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TimerActivity">
-    <ImageView
-        android:id="@+id/ib_voltar"
-        android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginStart="22dp"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView3"
-        app:srcCompat="@drawable/ic_voltar" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar_projeto" />
+
+
+    <me.tankery.lib.circularseekbar.CircularSeekBar
+        android:id="@+id/progress_circular"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:cs_circle_color="@color/roxo2"
+        app:cs_circle_fill="@color/branco"
+        app:cs_circle_progress_color="@color/roxo"
+        app:cs_circle_stroke_width="16dp"
+        app:cs_circle_style="round"
+        app:cs_circle_x_radius="0dp"
+        app:cs_circle_y_radius="0dp"
+        app:cs_disable_pointer="false"
+        app:cs_disable_progress_glow="true"
+        app:cs_hide_progress_when_empty="true"
+        app:cs_lock_enabled="true"
+        app:cs_maintain_equal_circle="true"
+        app:cs_max="100"
+        app:cs_move_outside_circle="true"
+        app:cs_negative_enabled="false"
+        app:cs_pointer_alpha_ontouch="5"
+        app:cs_pointer_angle="0"
+        app:cs_pointer_color="@color/white"
+        app:cs_pointer_stroke_width="20dp"
+        app:cs_progress="70"
+        app:cs_use_custom_radii="false"
+        app:layout_constraintBottom_toTopOf="@+id/img_pause"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <ImageView
+        android:id="@+id/img_play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_stop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_play_cronometro" />
+
+    <ImageView
+        android:id="@+id/img_stop"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_pause"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_play"
+        app:srcCompat="@drawable/ic_stop_cronometro" />
+
+    <ImageView
+        android:id="@+id/img_pause"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/img_reset"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_stop"
+        app:srcCompat="@drawable/ic_pause_cronometro" />
+
+    <ImageView
+        android:id="@+id/img_reset"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="148dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/img_pause"
+        app:srcCompat="@drawable/ic_reset_cronometro" />
+
+    <EditText
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:text="Nome Do Projeto"
-        android:fontFamily="@font/rubikmedium"
-        android:textColor="@color/black"
+        android:text="00:00:00"
         android:textSize="24dp"
+        android:textStyle="bold"
+
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toBottomOf="@+id/progress_circular"
+        app:layout_constraintEnd_toEndOf="@+id/progress_circular"
+        app:layout_constraintStart_toStartOf="@+id/progress_circular"
+        app:layout_constraintTop_toTopOf="@+id/progress_circular" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome do Projeto"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:textColor="@color/roxo"
+        app:layout_constraintBottom_toTopOf="@+id/progress_circular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/pause_cronometro"
-        android:layout_width="67dp"
-        android:layout_height="78dp"
-        android:layout_marginStart="85dp"
-        android:layout_marginBottom="196dp"
-        android:padding="3dp"
-        android:src="@drawable/ic_pause_cronometro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <de.hdodenhof.circleimageview.CircleImageView
-        android:id="@+id/parar_cronometro"
-        android:layout_width="67dp"
-        android:layout_height="78dp"
-        android:layout_marginEnd="85dp"
-        android:layout_marginBottom="196dp"
-        android:padding="3dp"
-        android:src="@drawable/ic_stop_cronometro"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="298dp"
-        android:layout_height="228dp"
-        android:layout_marginTop="128dp"
-        android:theme="@style/Theme.ProgressBar"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
-        tools:visibility="visible" />
+        app:layout_constraintTop_toBottomOf="@+id/include2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

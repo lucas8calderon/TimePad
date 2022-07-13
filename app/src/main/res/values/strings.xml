@@ -19,4 +19,52 @@
     <string name="nomeTarefa">Nome Tarefa</string>
     <string name="tarefa">Tarefa</string>
 
+
+
+    <!-- TIMER -->
+
+
+    <string name="circulartimer">Circular Timer</string>
+    <string name="normalcountdowntextview">Normal CountDownView</string>
+    <string name="dynamic">Dynamic CountDown</string>
+    <string name="size">- size</string>
+    <string name="incsize">+ size</string>
+    <string name="enter_seconds_to_show">enter seconds to show</string>
+    <string name="minus_thickness_foreground">- Thickness FG</string>
+    <string name="plus_thickness_foreground">+ Thickness FG</string>
+    <string name="minus_thickness_background">- Thickness BG</string>
+    <string name="plus_thickness_background">+ Thickness BG</string>
+    <string name="choose_background_stroke">BG Stroke</string>
+    <string name="choose_foreground_stroke">FG Stroke</string>
+    <string name="choose_timer_text_color">Text Color</string>
+    <string name="plus_timer_text_size">+ Text Size</string>
+    <string name="minus_timer_text_size">- Text Size</string>
+    <string name="timertextisbold">TimerTextIsBold</string>
+    <string name="h_m_s">H-M-S</string>
+    <string name="m_s">M-S</string>
+    <string name="s">S</string>
+    <string name="count_down">count_down</string>
+    <string name="count_up">count_up</string>
+    <string name="start">START</string>
+    <string name="stop">STOP</string>
+    <string name="resume">RESUME</string>
+    <string name="reset">RESET</string>
+    <string name="pause">PAUSE</string>
+    <string name="timer_state">Timer State</string>
+    <string name="completed_seconds">Completed Seconds</string>
+    <string name="total_seconds">Total Seconds</string>
+    <string name="init_timer">Init timer</string>
+    <string name="unknown">UNKNOWN</string>
+    <string name="isTimerTextShown">ShowTimerText</string>
+    <string name="minus_timer_label_size">- Timer label size</string>
+    <string name="plus_timer_label_size">+ Timer label size</string>
+    <string name="timertextlabelbold">TimerTextLabelBold</string>
+    <string name="label_text_color">Label text color</string>
+    <string name="show_hours">Show Hours</string>
+    <string name="show_minutes">Show Minutes</string>
+    <string name="show_seconds">Show Seconds</string>
+    <string name="minus_timer_separator_size">- Timer separator size</string>
+    <string name="plus_timer_separator_size">+Timer Separator Size</string>
+    <string name="separator_color">Separator Color</string>
+
 </resources>
