@@ -22,19 +22,19 @@
         app:cs_circle_style="round"
         app:cs_circle_x_radius="0dp"
         app:cs_circle_y_radius="0dp"
-        app:cs_disable_pointer="false"
+        app:cs_disable_pointer="true"
         app:cs_disable_progress_glow="true"
         app:cs_hide_progress_when_empty="true"
-        app:cs_lock_enabled="true"
+        app:cs_lock_enabled="false"
         app:cs_maintain_equal_circle="true"
         app:cs_max="100"
+        app:cs_progress="100"
         app:cs_move_outside_circle="true"
         app:cs_negative_enabled="false"
         app:cs_pointer_alpha_ontouch="5"
         app:cs_pointer_angle="0"
         app:cs_pointer_color="@color/white"
         app:cs_pointer_stroke_width="20dp"
-        app:cs_progress="70"
         app:cs_use_custom_radii="false"
         app:layout_constraintBottom_toTopOf="@+id/img_pause"
         app:layout_constraintEnd_toEndOf="parent"
@@ -92,8 +92,7 @@
         android:text="00:00:00"
         android:textSize="24dp"
         android:textStyle="bold"
-
-        android:inputType="numberSigned|numberDecimal"
+        android:inputType="numberDecimal"
         app:layout_constraintBottom_toBottomOf="@+id/progress_circular"
         app:layout_constraintEnd_toEndOf="@+id/progress_circular"
         app:layout_constraintStart_toStartOf="@+id/progress_circular"
@@ -111,6 +110,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/include2" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="TextView"
+        android:textColor="@color/roxo"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/img_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progress_circular" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
