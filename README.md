@@ -18,20 +18,15 @@
 
 <div align="center">
 
- <img src="https://user-images.githubusercontent.com/87238842/182443779-4e5a32d7-0acf-4ca8-9f83-07a5bf5fe154.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443784-26c002f9-d8db-4883-81f0-388c01d4a592.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443788-da8b56ca-ed67-4c62-8bcb-a3618cb55e74.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443789-d8422e88-769a-4e7e-a680-721ca0726687.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443790-4c943e25-e27b-40d6-8ad5-800f04cbd90b.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911220-ceebf377-1ffc-4aa4-9e1d-bd32798d8a74.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911224-ad37598d-2c9b-4767-a8c0-d18ee52f7b08.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911226-5b0d4859-b3e5-45e5-a3ba-08cccdf4111d.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911227-f46a7018-7e53-4c7a-a7d8-577cd94b19de.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911229-a30f969f-ee69-46d5-91de-7babd9e1e470.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911234-346cdf55-0b87-4e5a-9c5d-5edebe207175.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911236-0139d176-a538-4ba2-ade3-4a288cfa2b0c.png" width="150">
+ <img src="https://user-images.githubusercontent.com/87238842/182911243-84a970d4-db81-460b-b193-0e34e8e2598d.png" width="150">
 
- <img src="https://user-images.githubusercontent.com/87238842/182443797-c9656c2f-c871-4cfd-ac1d-3be979a082ff.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443800-67ea6f06-6058-46f7-8bec-8aab632fe78c.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443801-802bc1b0-4aa9-48cd-a25c-ebc798ffc522.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443802-f2f1b110-0a69-4ff3-a133-2a89ef08dd45.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443806-74930bdb-6385-45fe-a8cb-bc6a957172d3.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443808-41c42b27-03bb-45dc-a0f0-892daba8375d.png" width="150">
- <img src="https://user-images.githubusercontent.com/87238842/182443812-ab9d2add-de35-42d9-abef-105af8295df5.png" width="150">
-  <img src="(https://user-images.githubusercontent.com/87238842/182443791-b660906c-6b09-4e29-95f3-33ad00bc2e4f.png" width="150">
 
 
 
@@ -42,8 +37,8 @@
 
 ## 📖 Sobre
 
-A proposta do projeto é a criação de um app de calculos de consumo e aproveitamento de combustivel.
-Este projeto foi desenvolvido durante minha jornada de estudos, com intuito de aprimorar os conhecimentos em desenvolvimento de android nativo.
+A proposta do projeto é a criação de um app organizador de tarefas com um temporizador, parecido com a metologia "pomodoro". 
+Este projeto foi desenvolvido durante minha jornada de estudos, com intuito de aprimorar os conhecimentos em desenvolvimento de android nativo e trabalho em equipe usando git/github.
 
 ---
 
@@ -59,17 +54,15 @@ O projeto foi desenvolvido utilizando as seguintes Ferramentas:
 - Bundle
 - Splash Activity Animada
 - Navegação entre Activities
-- ViewPager
 - Lógica de Programação
 - POO
-- Dialog
 - RecyclerView
-- Banco de Dados (Armazenamento interno com sqlite)
-- Floating Bottom
-- Bottom Navigation
-- Webview (Acessando o google maps)
+- Banco de Dados 
+- Firebase
 - Layouts
+- Git
+- Recuperar senha por email
+- Cadastrar Usuario
 
----
 
-Desenvolvido por Lucas Alves da Silva Calderon.
+Desenvolvido por Lucas Alves da Silva Calderon, Lucas Anastacio, Daniel Lopes e Giovanny Albuquerque.
